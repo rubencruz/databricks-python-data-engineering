@@ -25,7 +25,7 @@ variables:
     default: dev
   performance_target:
     description: "Performance target for the job"
-    default: "10"
+    default: "STANDARD"
 targets:
   dev:
     # The default target uses 'mode: development' to create a development copy.
