@@ -17,7 +17,7 @@ resources:
           default: "Anselmo"
       email_notifications:
         on_failure:
-          - anselmoborges@gmail.com
+          - rubencruzh@gmail.com
       timeout_seconds: 900
       schedule:
         quartz_cron_expression: "0 0 8 ? * TUE *"
