@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - prod
 
 jobs:
   deploy-prd:
@@ -35,21 +35,21 @@ jobs:
 
       - name: Validar bundle Databricks
         env:
-          DATABRICKS_CONFIG_PROFILE: PRD
+          DATABRICKS_CONFIG_PROFILE: PROD
         run: |
           cd dab_test
-          databricks bundle validate --target prd
+          databricks bundle validate --target prod
 
       - name: Deploy bundle Databricks
         env:
-          DATABRICKS_CONFIG_PROFILE: PRD
+          DATABRICKS_CONFIG_PROFILE: PROD
         run: |
           cd dab_test
-          databricks bundle deploy --target prd
+          databricks bundle deploy --target prod
 
       - name: Executar job Databricks
         env:
-          DATABRICKS_CONFIG_PROFILE: PRD
+          DATABRICKS_CONFIG_PROFILE: PROD
         run: |
           cd dab_test
-          databricks bundle run dab_test_job --target prd
+          databricks bundle run dab_test_job --target prod
