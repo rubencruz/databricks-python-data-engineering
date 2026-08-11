@@ -49,3 +49,6 @@ def test_job_uses_variable_for_performance_target():
     print("Validando uso da variável performance_target...")
     assert job.get("performance_target") == "${var.performance_target}"
     print("performance_target OK!")
+
+spark = None
+

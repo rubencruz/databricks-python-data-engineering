@@ -20,6 +20,9 @@ variables:
     description: The catalog to use
   schema:
     description: The schema to use
+  catalog_name:
+    description: "Catalog used by the job"
+    default: dev
 
 targets:
   dev:
