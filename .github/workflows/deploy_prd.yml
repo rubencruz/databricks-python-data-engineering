@@ -37,19 +37,19 @@ jobs:
         env:
           DATABRICKS_CONFIG_PROFILE: PRD
         run: |
-          cd dab_treinamento
+          cd dab_test
           databricks bundle validate --target prd
 
       - name: Deploy bundle Databricks
         env:
           DATABRICKS_CONFIG_PROFILE: PRD
         run: |
-          cd dab_treinamento
+          cd dab_test
           databricks bundle deploy --target prd
 
       - name: Executar job Databricks
         env:
           DATABRICKS_CONFIG_PROFILE: PRD
         run: |
-          cd dab_treinamento
-          databricks bundle run dab_treinamento_job --target prd
+          cd dab_test
+          databricks bundle run dab_test_job --target prd
