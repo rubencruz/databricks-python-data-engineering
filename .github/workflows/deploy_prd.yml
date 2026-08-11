@@ -1,4 +1,4 @@
-name: Deploy Databricks Bundle PRD
+name: Deploy Databricks Bundle PROD
 
 on:
   workflow_dispatch:
