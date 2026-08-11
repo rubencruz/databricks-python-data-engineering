@@ -23,7 +23,9 @@ variables:
   catalog_name:
     description: "Catalog used by the job"
     default: dev
-
+  performance_target:
+    description: "Performance target for the job"
+    default: "10"
 targets:
   dev:
     # The default target uses 'mode: development' to create a development copy.
