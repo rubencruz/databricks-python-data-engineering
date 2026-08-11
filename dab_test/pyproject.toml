@@ -28,8 +28,9 @@ main = "dab_test.main:main"
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+
 [tool.hatch.build.targets.wheel]
-packages = ["dab_test"]
+packages = ["src/dab_test"]
 
 [tool.ruff]
 line-length = 120

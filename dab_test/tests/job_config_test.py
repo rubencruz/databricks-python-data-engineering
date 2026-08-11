@@ -2,7 +2,7 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-JOB_FILE = ROOT / "resources" / "jobs" / "dab_treinamento.job.yml"
+JOB_FILE = ROOT / "resources" / "jobs" / "dab_treinamento_job.yml"
 
 
 def _load_job():
