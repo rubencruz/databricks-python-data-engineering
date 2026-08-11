@@ -7,7 +7,7 @@ on:
       - prod
 
 jobs:
-  deploy-prd:
+  deploy-prod:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout código
@@ -28,7 +28,7 @@ jobs:
           DATABRICKS_CLIENT_SECRET: ${{ secrets.DATABRICKS_CLIENT_SECRET_PRD }}
         run: |
           mkdir -p ~/.databricks
-          echo "[PRD]" > ~/.databrickscfg
+          echo "[PROD]" > ~/.databrickscfg
           echo "host = $DATABRICKS_HOST" >> ~/.databrickscfg
           echo "client_id = $DATABRICKS_CLIENT_ID" >> ~/.databrickscfg
           echo "client_secret = $DATABRICKS_CLIENT_SECRET" >> ~/.databrickscfg
