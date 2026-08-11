@@ -38,16 +38,14 @@ targets:
       host: https://dbc-39ee3252-8e93.cloud.databricks.com
     variables:
       catalog: dev
-      schema: dev
+      schema: rescue_b
   prod:
     mode: production
     workspace:
       host: https://dbc-39ee3252-8e93.cloud.databricks.com
-      # We explicitly deploy to /Workspace/Users/rubencruzh@gmail.com to make sure we only have a single copy.
-      root_path: /Workspace/Users/rubencruzh@gmail.com/.bundle/${bundle.name}/${bundle.target}
     variables:
       catalog: prod
-      schema: prod
+      schema: rescue_b
     permissions:
       - user_name: rubencruzh@gmail.com
         level: CAN_MANAGE
