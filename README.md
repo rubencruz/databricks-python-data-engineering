@@ -1,5 +1,4 @@
-# Databricks Asset Bundle — Python Data Engineering
-
+# Databricks Asset Bundle — Python Data Engineering - Databricks platform engineering / CI/CD reference implementation.
 A practical Databricks Data Engineering project demonstrating how to develop, test, package, deploy, and execute Python workloads using **Databricks Asset Bundles (DAB)** and **GitHub Actions CI/CD**.
 
 The project implements separate **DEV and PROD environments**, Python Wheel packaging, automated testing, parameterized Databricks Jobs, OAuth Service Principal authentication, and a reproducible development environment using VS Code Dev Containers.
